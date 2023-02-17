@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+    {% block title %} Resultado {% endblock %}
+    {% block title_page %} Resultado Pesquisa {% endblock %}
+    {% block content %}
+    <section class="container">
+        <p>Sua origem: {{ form.origem.value }}</p>
+        <p>Seu destino: {{ form.destino.value }}</p>
+        <p>Ida: {{ form.data_ida.value }}</p>
+        <p>Volta: {{ form.data_volta.value }}</p>
+        <p>Data consulta: {{ form.data_pesquisa.value }}</p>
+        <p>Classe do vôo: {{ form.classe_viagem.value}}</p>
+        <p>Informções: {{ form.informacoes.value}}</p>
+        <p>E-mail: {{ pessoa_form.email.value}}</p>
+    </section>
+    {% endblock %}
